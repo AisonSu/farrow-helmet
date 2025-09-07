@@ -1,0 +1,10 @@
+# Run linting and testing before commit
+echo "Running pre-commit checks..."
+
+# Run TypeScript compilation
+echo "Checking TypeScript compilation..."
+pnpm build
+
+# Run tests
+echo "Running tests..."
+pnpm test --run

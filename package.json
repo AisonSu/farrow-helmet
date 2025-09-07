@@ -1,0 +1,81 @@
+{
+  "name": "farrow-helmet",
+  "version": "0.1.0",
+  "description": "Security middleware for Farrow HTTP applications that helps secure your web apps by setting various HTTP security headers",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest --coverage",
+    "clean":"rimraf dist",
+    "prebuild":"pnpm clean",
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "commit": "cz",
+    "release": "standard-version",
+    "prepare": "husky"
+  },
+  "keywords": [
+    "farrow",
+    "farrow-http", 
+    "helmet",
+    "security",
+    "middleware",
+    "http-headers",
+    "web-security",
+    "typescript",
+    "csp",
+    "hsts",
+    "xss",
+    "clickjacking",
+    "security-headers"
+  ],
+  "author": "Aison <aisonsu@outlook.com>",
+  "license": "MIT",
+  "packageManager": "pnpm@10.15.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AisonSu/farrow-helmet.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AisonSu/farrow-helmet/issues"
+  },
+  "homepage": "https://github.com/AisonSu/farrow-helmet#readme",
+  "files": [
+    "dist",
+    "README.md", 
+    "README_ZH.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "peerDependencies": {
+    "farrow-http": "^2.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "farrow-http": "^2.3.1",
+    "farrow-pipeline": "^2.3.0",
+    "helmet": "^8.1.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@types/node": "^20.0.0",
+    "@vitest/coverage-v8": "^1.0.0",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^9.1.7",
+    "standard-version": "^9.5.0",
+    "supertest": "^7.0.0",
+    "@types/supertest": "^6.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  }
+}
